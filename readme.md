@@ -4,6 +4,8 @@
 
 The `breadcrumb.xsl` code here provides a mechanism to build out breadcrumbs for pages in a section by recursively checking a file in each of the parent sections and the current section for the breadcrumb titles. Each breadcrumb up the tree will link to the index/default page of the section, with a final breadcrumb appearing for pages that are not index/default pages. 
 
+Users who wish to implement this code should have a basic understanding of XSL and the implementation skeleton. 
+
  - This code assumes that a section properties file (`_props.pcf`) is being used to extract section titles for each section. 
  - If there aren't any section properties files, the XSL can be modified to check the page title of the index/default page of each section instead.
  - If the user leaves the breadcrumb value empty or enters the value of "$skip", the build out will skip the breacrumb for that folder. 
